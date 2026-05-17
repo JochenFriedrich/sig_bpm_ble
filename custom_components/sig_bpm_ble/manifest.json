@@ -1,0 +1,18 @@
+{
+  "domain": "sig_bpm_ble",
+  "name": "SIG Blood Pressure Monitor BLE",
+  "version": "1.0.0",
+  "documentation": "https://github.com/JochenFriedrich/sig_bpm_ble",
+  "issue_tracker": "https://github.com/JochenFriedrich/sig_bpm_ble/issues",
+  "dependencies": ["bluetooth"],
+  "codeowners": ["@JochenFriedrich"],
+  "requirements": ["bleak>=0.21.1", "bleak-retry-connector>=3.0.0"],
+  "bluetooth": [
+    {
+      "service_uuid": "00001810-0000-1000-8000-00805f9b34fb"
+    }
+  ],
+  "config_flow": true,
+  "iot_class": "local_push",
+  "quality_scale": "custom"
+}

@@ -1,0 +1,23 @@
+{
+  "title": "SIG Blood Pressure Monitor (BLE)",
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "title": "Set up Blood Pressure Monitor",
+        "description": "Found {count} SIG-compliant BLE blood pressure device(s). Select one or enter a MAC address manually.",
+        "data": {
+          "address": "Device MAC address"
+        }
+      },
+      "bluetooth_confirm": {
+        "title": "Confirm Blood Pressure Monitor",
+        "description": "Do you want to set up **{name}** ({address})?"
+      }
+    },
+    "abort": {
+      "already_configured": "This device is already configured.",
+      "no_devices_found": "No SIG-compliant BLE blood pressure devices were found nearby."
+    }
+  }
+}
